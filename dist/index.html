@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Citi Global College</title>
+    <link rel="stylesheet"href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="script.js"></script>
+    <style>
+      .swiper-pagination-bullet {
+        background-color:#5c0505;
+        width: 11px;
+        height: 11px;
+      }
+      .swiper {
+        background-color:#720202;
+      }
+    </style>
+    <link rel="stylesheet" href="output.css">
+    
+</head>
+<body>
+<div class="w-full bg-primary flex items-center justify-evenly">
+    <header class="w-2/3 h-16 flex justify-between items-center">
+        <div class="w-70 h-7 flex justify-center items-center ">
+            <img src="CGC/location-logo.png" alt="Location Logo">
+            <p class="font-Manrope text-white">JP Rizal St, Cabuyao, 4025 Laguna</p>
+        </div>
+        <div class="flex justify-center items-center">
+            <p class="font-Manrope text-white">Announcements &nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;</p>
+            <p class="font-Manrope text-white">Events &nbsp;|&nbsp;</p>
+            <p class="font-Manrope text-white">&nbsp;&nbsp;Privacy Policy</p>
+        </div>
+    </header>
+</div>
+<div id="navID" class="w-full h-20 flex items-center justify-evenly bg-white">
+        <nav class="w-2/3 h-20 flex items-center justify-between">
+            <div class="flex justify-center items-center">
+                <img class="w-14 ml-1 mr-3 hidden" src="CGC/logo.jpg" alt="">
+                <h1 class="text-4xl mr-10 font-bold font-Vollkorn text-primary hidden">CGC</h1>
+                <img id="logo-banner" class="w-60" src="CGC/cropped-BANNER-LOGO-2.png" alt="">
+            </div>
+                <ul class="flex font-medium mb-1 ">
+                    <li class="after:content-link pl-1 pr-1 mr-3">About&nbsp;</li>
+                    <li class="after:content-link pl-1 pr-1 mr-3">Admission&nbsp;</li>
+                    <li class="after:content-link pl-1 pr-1 mr-3">Academics&nbsp;</li>
+                    <li class="after:content-link pl-1 pr-1">Campus Life&nbsp;</li>
+                </ul>
+            <div class="pb-2 w-60 flex justify-end">
+                <img src="CGC/search-icon.png" alt="">
+            </div>
+      </nav>
+</div>
+    <main class="h-80vh w-full flex justify-center items-center">
+        <div class="w-full flex justify-center items-center object-cover">
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <img class="w-100%"  src="CGC/background (Large).jpg" alt="">
+                  </div>
+                  <div class="swiper-slide">
+                    <img class="w-100%"  src="CGC/background3 (Large).png" alt="">
+                  </div>
+                  <div class="swiper-slide">
+                    <img class="w-100% h-full"  src="CGC/background4 custom (Large).jpg" alt="">
+                  </div>
+                </div>
+                <div class="swiper-pagination"></div>
+              </div>
+        </div>
+    </main>
+  <div class="h-16 w-full bg-primary flex items-center justify-evenly">
+    <div class="w-2/3 h-16 flex justify-between items-center relative text-third">
+      <button class="w-64 h-10 border border-third rounded-3xl">Academic Programs</button>
+      <button class="w-64 h-10 border border-third rounded-3xl">Student Services</button>
+      <button class="w-64 h-10 border border-third rounded-3xl">Online Resources</button>
+      <button class="w-64 h-10 border border-third rounded-3xl">Events</button>
+    </div>
+  </div>
+
+  <div class="h-90vh w-full flex justify-center">
+    <div class="w-2/3 h-full flex ">
+      <div class="w-5/12 h-full pt-36">
+        <div class="w-96 font-Vollkorn mb-2 ">
+          <h1 class="text-5xl font-semibold tracking-tighter ">
+            <span class="text-primary">FUTURE-</span>READY LEARNING
+          </h1>
+      </div>
+      <div class="h-96  w-11/12">
+          <p class="font-Manrope font-medium text-2xl">Citi Global College is committed to transformative education, preparing students for a dynamic future. We cultivate innovative thinkers, skilled problem solvers, and ethical leaders through a blend of 
+            academic excellence and practical skills. Our core values of integrity, excellence, and social responsibility ensure that graduates are well-equipped to make a positive impact 
+            in their careers and communities.</p>
+      </div>
+      <div class="h-16 w-full flex items-center justify-between">
+          <button class="w-56 h-10 bg-primary font-semibold text-white rounded-3xl">Educational Philosophy</button>
+          <button class="w-56 h-10 border-2 font-semibold border-primary text-primary rounded-3xl">Honors</button>
+        </div>
+      </div>
+    <div class="w-9/12 grid place-content-center relative">
+        <img class="absolute top-36 left-28" src="CGC/dots.png" alt="">
+        <img class="w-[610px] ml-28 border-2 border-primary z-10" src="CGC/Untitled design.png" alt="">
+        <img class="absolute bottom-40 right-4" src="CGC/Rectangle.png" alt="">
+    </div>
+    </div>
+    
+  </div>
+  
+<script>
+    var swiper = new Swiper(".mySwiper", {
+      spaceBetween: 0,
+      centeredSlides: true,
+      autoplay: {
+        delay: 3100,
+        disableOnInteraction: false,
+      },
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+    });
+</script>
+</body>
+</html>
